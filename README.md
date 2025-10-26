@@ -7,44 +7,8 @@ The framework follows industry-standard best practices and supports **CI/CD inte
 
 ## 📁 Project Structure
 
-HybridAutomationFrameworkbyAP/
-│
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── framework.api/ # API Testing Layer (RestAssured-based)
-│ │ │ ├── framework.api.endpoints/ # API Endpoints Management
-│ │ │ ├── framework.api.payload/ # Request Payload Builders
-│ │ │ ├── framework.base/ # Base Classes (Driver setup, config, etc.)
-│ │ │ ├── framework.pages/ # Page Object Model Classes for UI
-│ │ │ └── framework.utils/ # Common Utilities (Excel, Logs, Reports)
-│ │ │
-│ │ └── resources/
-│ │ ├── API_Functional_Testcase.csv
-│ │ ├── config.properties # Global Configurations
-│ │ ├── log4j2.xml # Logging Configuration
-│ │ └── router.properties # Email / Environment Properties
-│ │
-│ └── test/
-│ ├── java/
-│ │ ├── tests.api/ # API Test Classes
-│ │ ├── tests.integration/ # Integration Test Classes
-│ │ └── tests.ui/ # UI Test Classes (Selenium / WebDriver)
-│
-├── reports/ # Extent & Allure Report Output
-├── logs/ # Execution Logs
-├── test-output/ # TestNG Output Directory
-│
-├── testng.xml # Master Suite
-├── testng-api.xml # API Test Suite
-├── testng-integration.xml # Integration Test Suite
-├── testng-ui.xml # UI Test Suite
-│
-├── extent-config.xml # Extent Report Theme Config
-├── Jenkinsfile # Jenkins CI/CD Pipeline
-├── Dockerfile # Docker Container Setup
-├── pom.xml # Maven Project Configuration
-└── README.md # Project Documentation
+<img width="336" height="817" alt="image" src="https://github.com/user-attachments/assets/208138cc-e541-4079-accc-ba8cb3ddc3d0" />
+
 
 
 
