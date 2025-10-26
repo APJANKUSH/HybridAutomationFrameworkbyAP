@@ -1,0 +1,5 @@
+2025-10-26 22:25:47 [main] INFO  tests.api.TestUsers - User Updated ..!
+2025-10-26 23:35:12 [TestNG-tests-1] INFO  tests.api.TestUsers - User created ..!
+2025-10-26 23:35:14 [TestNG-tests-1] INFO  tests.api.TestUsers -  User data fetched..!
+2025-10-26 23:35:17 [TestNG-tests-1] INFO  tests.api.TestUsers - User Updated ..!
+2025-10-26 23:35:19 [TestNG-tests-1] INFO  tests.api.TestUsers - User Deleted ..!

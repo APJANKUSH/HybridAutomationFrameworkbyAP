@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-27T01:30:50 IST" name="HybridAutomationFrameworkSuite" finished-at="2025-10-27T01:31:15 IST" duration-ms="25558">
+    <groups>
+    </groups>
+    <test started-at="2025-10-27T01:30:50 IST" name="UI Tests" finished-at="2025-10-27T01:31:15 IST" duration-ms="25558">
+      <class name="tests.ui.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTest@76a2ddf3]" started-at="2025-10-27T01:30:50 IST" name="setUp" finished-at="2025-10-27T01:31:07 IST" duration-ms="17188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogin()[pri:0, instance:tests.ui.LoginTest@76a2ddf3]" started-at="2025-10-27T01:31:08 IST" name="verifyLogin" finished-at="2025-10-27T01:31:14 IST" duration-ms="6378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTest@76a2ddf3]" started-at="2025-10-27T01:31:14 IST" name="tearDown" finished-at="2025-10-27T01:31:15 IST" duration-ms="1192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ui.LoginTest -->
+    </test> <!-- UI Tests -->
+  </suite> <!-- HybridAutomationFrameworkSuite -->
+</testng-results>

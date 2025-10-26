@@ -1,0 +1,36 @@
+S.No	Test Case ID	Module / API Name	Test Scenario / Description	Pre-Condition	API Endpoint (URL)	HTTP Method	Request Body / Payload	Headers	Test Steps / Action	Expected Result	Actual Result	Status (Pass/Fail)	Response Code	Response Time (ms)	Comments / Remarks
+1	TC_Users_001	Users API	Verify that a user can be created successfully with valid data	Valid auth token should be available	https://gorest.co.in/public/v2/users	POST	POJO Class	"Authorization: Bearer <token>
+Content-Type: application/json"	"1. Send POST request
+2. Observe the response"	"Status code = 201
+Response body contains valid id, name, email"			201		
+2	TC_Users_002	Users API	Verify response when creating user with missing email	Valid auth token should be available	https://gorest.co.in/public/v2/users	POST	POJO Class	"Authorization: Bearer <token>
+Content-Type: application/json"	1. Send POST without email	"Status code = 422
+Error message for missing field"			422		
+3	TC_Users_003	Users API	Validate fetching a user by ID	A valid userId must exist	https://gorest.co.in/public/v2/users/{userId}	GET	N/A	"Authorization: Bearer <token>
+Content-Type: application/json"	1. Send GET with valid userId	"Status code = 200
+Response body contains correct data"			200		
+4	TC_Users_004	Users API	Validate updating a user’s name	A valid userId must exist	https://gorest.co.in/public/v2/users/{userId}	PUT	POJO Class	"Authorization: Bearer <token>
+Content-Type: application/json"	"1. Send PUT request
+2. Verify updated data"	"Status code = 200
+Updated name reflected in response"			200		
+5	TC_Users_005	Users API	Validate deletion of a user by ID	A valid userId must exist	https://gorest.co.in/public/v2/users/{userId}	DELETE	N/A	"Authorization: Bearer <token>
+Content-Type: application/json"	"1. Send DELETE request
+2. Verify response"	"Status code = 204
+User no longer accessible"			204		
+6	TC_Users_006	Users API	Verify response without Authorization header	N/A	https://gorest.co.in/public/v2/users/{userId}	GET	N/A	None	1. Send request without Authorization header	Status code = 401 Unauthorized			401		
+7	TC_Users_007	Users API	Validate response headers	Valid auth token	https://gorest.co.in/public/v2/users	GET	N/A	"Authorization: Bearer <token>
+Content-Type: application/json"	"1. Send GET
+2. Check headers"	"Content-Type: application/json
+Server not null"			200		
+8	TC_Users_008	Users API	Verify Get User by valid ID	User exists	https://gorest.co.in/public/v2/users/{userId}	GET	N/A	None	"1. Send GET
+2. Check user exists"	"Status code = 200
+User details should be returned"			200		
+9	TC_Users_009	Users API	Verify Get User by invalid ID	N/A	https://gorest.co.in/public/v2/users/{userId}	GET	N/A	None	"1. Send GET
+2. Check response"	"Status Code : 404
+Error message “Resource not found”"			404		
+10	TC_Users_010	Users API	Create a user with duplicate email	Valid access token	https://gorest.co.in/public/v2/users	POST	Duplicate email from existing user	"Authorization: Bearer <token>
+Content-Type: application/json"	Send POST request	"Status Code : 422
+Error: Email already taken"			422		
+11	TC_Users_011	Users API	Validate id is integer	Valid request	https://gorest.co.in/public/v2/users	POST	N/A	"Authorization: Bearer <token>
+Content-Type: application/json"	Send GET request	"Status Code : 200
+id field is integers"			200		

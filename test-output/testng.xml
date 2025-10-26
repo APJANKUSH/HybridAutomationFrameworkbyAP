@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="HybridAutomationFrameworkSuite" parallel="tests" thread-count="3">
+
+    <!-- =================== UI TESTS =================== -->
+  <test name="UI Tests">
+    <packages>
+      <package  name="tests.ui.LoginTest"/>
+    </packages>
+  </test>
+  
+  <!-- =================== API TESTS =================== -->
+  <test name="API Tests">
+    <packages>
+      <package  name="tests.api.UserApiTest"/>
+    </packages>
+  </test>
+  
+   <!-- =================== INTEGRATION TESTS =================== -->
+  <test name="Integration Tests">
+    <packages>
+      <package  name="tests.integration.EndToEndUserFlowTest"/>
+    </packages>
+  </test>
+</suite>
